@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'cowsay'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use postgresql as the database for Active Record
@@ -31,9 +33,10 @@ gem 'spring',        group: :development
 
 gem 'puma'
 
+gem 'tzinfo-data'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
