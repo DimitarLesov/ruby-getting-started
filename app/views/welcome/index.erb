@@ -5,5 +5,7 @@
 </p>
 
 <pre>
+<% for i in 0..(ENV['TIMES'] ? ENV['TIMES'].to_i : 2) do %>
 <%= Cowsay.say("Hello") %>
+<% end %>
 </pre>
