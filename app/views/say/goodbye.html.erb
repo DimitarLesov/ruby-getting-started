@@ -1,0 +1,14 @@
+<h1>Goodbye!</h1>
+<p>
+It was nice having you here.
+</p>
+
+<p>
+Say <%= link_to "Hello!", say_hello_path %> again!
+</p>
+
+<pre>
+<% for i in 0..(ENV['TIMES'] ? ENV['TIMES'].to_i : 2) do %>
+<%= Cowsay.say("Bye") %>
+<% end %>
+</pre>

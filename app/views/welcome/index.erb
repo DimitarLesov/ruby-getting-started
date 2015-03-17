@@ -3,6 +3,13 @@
 <p>
   Welcome!
 </p>
+<p>
+  It is now <%= @time %>
+</p>
+
+<p>
+Say <a href="/welcome/goodbye">Goodbye</a>!
+</p>
 
 <pre>
 <% for i in 0..(ENV['TIMES'] ? ENV['TIMES'].to_i : 2) do %>

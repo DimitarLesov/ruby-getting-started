@@ -1,0 +1,25 @@
+<h1>Say Hello</h1>
+
+<p>
+  Welcome!
+</p>
+<p>
+  It is now <%= @time %>
+</p>
+
+<p>
+Time to say
+<%= link_to "Goodbye", say_goodbye_path %>!
+</p>
+
+<p>
+• Addition: <%= 1+2 %>
+• Concatenation: <%= "cow" + "boy" %>
+• Time in one hour: <%= 1.hour.from_now %>
+</p>
+
+<pre>
+<% for i in 0..(ENV['TIMES'] ? ENV['TIMES'].to_i : 2) do %>
+<%= Cowsay.say("Hello") %>
+<% end %>
+</pre>
